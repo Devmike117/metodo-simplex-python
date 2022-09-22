@@ -29,6 +29,6 @@
 
 ### 🔨 Ejecutable del programa
 
-[Calculadora Simplex-Pert.exe](https://github.com/Mike538/metodo-simplex-python/releases/download/untagged-c57ac8b258d920f57663/Calculadora.Simplex-Pert.exe)
+[Click aquí para descargar](https://github.com/Mike538/metodo-simplex-python/releases/download/untagged-c57ac8b258d920f57663/Calculadora.Simplex-Pert.exe)
 
 <h1 align="left"><img src="https://i.pinimg.com/originals/5a/93/c2/5a93c26aca8989b11d6c40d953c5cc14.gif" width="200" height="200" /> </h1>
