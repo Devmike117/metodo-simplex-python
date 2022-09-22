@@ -25,7 +25,6 @@
 [![Crypto donate](https://img.shields.io/badge/Crypto-donate-f7931a.svg?logo=bitcoin)](https://commerce.coinbase.com/checkout/3cf16974-83de-45f5-ad8f-b257e22386c7)
 [![PayPal.me donate](https://img.shields.io/badge/PayPal.me-donate-00457c.svg?logo=paypal)](https://paypal.me/MikeeUwU?country.x=MX&locale.x=es_XC)
 [![PayPal donate](https://img.shields.io/badge/PayPal-donate-00457c.svg?logo=paypal)]([https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HD2P2P3WGS5Y4](https://paypal.me/MikeeUwU?country.x=MX&locale.x=es_XC))
-[![Revolut donate](https://img.shields.io/badge/Revolut-donate-0075eb.svg?logo=revolut)](https://pay.revolut.com/justarchi)
 [![Steam donate](https://img.shields.io/badge/Steam-donate-000000.svg?logo=steam)](https://steamcommunity.com/tradeoffer/new/?partner=1101291397&token=-pop0PGF)
 
 ---
