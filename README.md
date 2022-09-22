@@ -31,4 +31,4 @@
 
 [Calculadora Simplex-Pert.exe](https://github.com/jadrianzc/calculadora-metodo-simplex/releases/download/v.1.0/Calculadora.Simplex-Pert.exe)
 
-<h1 align="center"><img src="https://i.pinimg.com/originals/5a/93/c2/5a93c26aca8989b11d6c40d953c5cc14.gif" width="40" height="30" /> </h1>
+<h1 align="center"><img src="https://i.pinimg.com/originals/5a/93/c2/5a93c26aca8989b11d6c40d953c5cc14.gif" width="100" height="100" /> </h1>
