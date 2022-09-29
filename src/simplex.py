@@ -1,3 +1,6 @@
+#Librerías para la realizacion de las operaciones 
+#por medio del método simplex
+
 from PyQt5.QtWidgets import *
 from PyQt5 import QtGui
 from PyQt5.QtGui import QIcon
@@ -86,7 +89,7 @@ class Simplex(QMainWindow):
             
             fila += 1
     
-    # Método: Genera la función objetivo con las variables de holgura
+    # Método: Genera la función objetivo con las variables 
     def dataFuncObj(self):
         self.cantVariables = self.ui.inputVar.value()
         self.cantRestricciones = self.ui.inputRes.value()
@@ -115,10 +118,10 @@ class Simplex(QMainWindow):
             self.ui.lblMaxZ.setStyleSheet("border: none; font-size: 18px")
             
         except Exception as err:
-            msjErr = "Por favor, ingrese la función objetivo"
+            msjErr = "Ingrese la funcion objetivo"
             msgBox1 = QMessageBox()
             msgBox1.setText(msjErr)
-            msgBox1.setWindowTitle("Error")
+            msgBox1.setWindowTitle("")
             msgBox1.setWindowIcon(QIcon(self.icoError))
             msgBox1.setStyleSheet("font-size: 14px; font-weight: bold; font-family: Century Gothic")
             msgBox1.exec_()
@@ -138,7 +141,7 @@ class Simplex(QMainWindow):
         self.sujRestr = "S.R. :\n"
         
         try:
-            # Bucle: incrementa las filas
+            # Bucle: incrementa las filas segun la cantidad de datos que requiera
             for i in range(fila):
                 increment = 0
                 restr = []
@@ -146,7 +149,7 @@ class Simplex(QMainWindow):
                 matrizRestrVar = []
                 restrBi = 0
                 
-                # Bucle: incrementa las columnas
+                # Bucle: incrementa las columnas segun la cantidad de datos que requiera
                 for j in range(column):
                     increment += 1
                     item = self.ui.tableRestr.item(i,j)
@@ -154,10 +157,10 @@ class Simplex(QMainWindow):
                     matrizRestrVar.append(itemNum)
                     divRestr.append(f"{item.text()}x{increment}")
                     
-                # Carga las variables de holgura por cada fila
+                # Carga las variables de los datos capturados por cada fila
                 matrizHolg = np.eye(fila)
                 
-                # Asigna la variable S de holgura
+                # Asigna la variable S de los datos
                 divRestr.append(f"s{i+1}")
                 restr.append(divRestr)
                 
@@ -457,7 +460,7 @@ class Simplex(QMainWindow):
         # Valida la última tabla
         self.lastTable = self.validaLastTable(cjZj, bi)
         if(self.lastTable == False):
-            msjErr = "Última tabla generada"
+            msjErr = "Se generó la ultima tabla con éxito"
             msgBox4 = QMessageBox()
             msgBox4.setText(msjErr)
             msgBox4.setWindowTitle("Éxito")
@@ -674,8 +677,15 @@ class Simplex(QMainWindow):
         # sys.exit(app.exec_())
         self.ui.widgetSimplex.setVisible(False)
         self.ui.widgetPerl.setVisible(False)
+    #Metodo: Generar los resultados en excel
+    #def generarReporte1(self):
+     #   self.tablaFinal = []
+      #  for f in range(self.fila):
+       #     filaAnterior = []
+        #    for c in range(self.columna):
+         #       item = self.ui.tableResult.item(f,c).text()
 
-    # Método: Genera el PDF
+    # Método: Genera los resultados en PDF
     def generarReporte(self):
         self.tablaFinal = []
         for f in range(self.fila):
@@ -689,10 +699,10 @@ class Simplex(QMainWindow):
         
         self.allPibote.append("Última tabla.")
         
-        autor, accept = QInputDialog.getText(self, 'Generar Reporte','Ingrese el nombre de quien genera el reporte:')
+        autor, accept = QInputDialog.getText(self, 'Generar Reporte','Ingrese el nombre del archivo:')
         if(accept):
             try:
-                doc = SimpleDocTemplate(f'Reporte_Simplex.pdf', pagesize=A4, topMargin=12)
+                doc = SimpleDocTemplate(f'Reporte_Simplex.csv', pagesize=A4, topMargin=12)
                 alineacionTitulo = ParagraphStyle(name="centrar", alignment=TA_CENTER, fontSize=20, leading=40)
                 alineacionTituloTabla = ParagraphStyle(name="centrar", alignment=TA_CENTER, fontSize=14, leading=40)
                 alineacionAutor = ParagraphStyle(name="centrar", alignment=TA_CENTER, fontSize=11, leading=30)

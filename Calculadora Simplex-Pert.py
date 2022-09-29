@@ -1,3 +1,10 @@
+#-------------------------------------------------------------------
+#               Proyect Investigación de operaciones
+#  Author: Mike Gabriel, Luis Angel, Kevin Miranda, Hector Sanchez
+#-------------------------------------------------------------------
+
+#Libreria para el funcionamiento del proyecto
+import panda3d
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import QIcon, QPixmap
 from PyQt5.QtCore import Qt
@@ -20,20 +27,20 @@ class MainWindow(QMainWindow):
             return os.path.join(os.path.abspath("."), ruta_relativa)
         
         # Icono ventana
-        self.icoMain = resolver_ruta("./src/assets/InvOpeLogo.ico")
+        self.icoMain = resolver_ruta("./src/assets/icon.png")
         self.icoError = resolver_ruta("./src/assets/cancelar.ico")
         self.icoSucess = resolver_ruta("./src/assets/check.ico")
         self.setWindowIcon(QIcon(self.icoMain))
 
         # Imagenes
-        self.img = resolver_ruta("./src/assets/welcome2.png")
+        self.img = resolver_ruta("./src/assets/proyectv1.png")
         pixmap = QPixmap(self.img)
         self.ui.label.setPixmap(pixmap)
         self.ui.label.setAlignment(Qt.AlignCenter)
         
         # Eventos
         self.ui.actionSimplex.triggered.connect(self.showSimplexUI)
-        self.ui.actionPerl_CPM.triggered.connect(self.showPerlUI)
+        #self.ui.actionPerl_CPM.triggered.connect(self.showPerlUI)
 
     # Método: Muestra la interfaz del método simplex  
     def showSimplexUI(self):
@@ -45,7 +52,7 @@ class MainWindow(QMainWindow):
     # Método: Muestra la interfaz del modelo de redes
     def showPerlUI(self):
         self.ui.widgetSimplex.setVisible(False)
-        self.ui.widgetPerl.setVisible(True)
+        self.ui.widgetPerl.setVisible(False)
         self.ui.groupBoxInputActv.setVisible(False)
         self.perl = Perl(self.ui, self.icoError, self.icoSucess, self.icoMain)
     

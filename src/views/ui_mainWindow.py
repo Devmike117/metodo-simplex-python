@@ -622,11 +622,10 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         #################################### MAIN WINDOW ####################################
-        MainWindow.setWindowTitle(_translate("MainWindow", "Calculadora Simplex-Pert"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Proyect V1"))
         # self.label.setText(_translate("MainWindow", "BIENVENIDO"))
-        self.menuM_todo.setTitle(_translate("MainWindow", "Método"))
-        self.actionSimplex.setText(_translate("MainWindow", "Simplex"))
-        self.actionPerl_CPM.setText(_translate("MainWindow", "Perl"))
+        self.menuM_todo.setTitle(_translate("MainWindow", "Click aquí"))
+        self.actionSimplex.setText(_translate("MainWindow", "Métdod Simplex"))
         #################################### UI - SIMPLEX ####################################
         self.groupBoxDatos.setTitle(_translate("MainWindow", "Datos"))
         self.lblVar.setText(_translate("MainWindow", "Ingrese el número de variables:"))
@@ -641,8 +640,8 @@ class Ui_MainWindow(object):
         self.btnPreviousTabla.setText(_translate("MainWindow", "ANTERIOR TABLA"))
         self.btnNextTabla.setText(_translate("MainWindow", "SIGUIENTE TABLA"))
         self.btnNuevo.setText(_translate("MainWindow", "NUEVO"))
-        self.btnSalir.setText(_translate("MainWindow", "SALIR"))
-        self.btnSalir.setText(_translate("MainWindow", "SALIR"))
+        self.btnSalir.setText(_translate("MainWindow", "REGRESAR"))
+        self.btnSalir.setText(_translate("MainWindow", "REGRESAR"))
         self.btnImprimir.setText(_translate("MainWindow", "IMPRIMIR"))
         self.groupBoxResul.setTitle(_translate("MainWindow", "Resultado"))
         self.groupBoxRespuesta.setTitle(_translate("MainWindow", "Respuesta"))
