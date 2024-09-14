@@ -14,13 +14,7 @@
 
 </div>
 
-[![Build status (GitHub)](https://img.shields.io/github/workflow/status/JustArchiNET/ArchiSteamFarm/ASF-ci/main?label=GitHub&logo=github&cacheSeconds=600)](https://github.com/JustArchiNET/ArchiSteamFarm/actions?query=workflow%3AASF-ci+branch%3Amain)
-[![Build status (Docker)](https://img.shields.io/github/workflow/status/JustArchiNET/ArchiSteamFarm/ASF-docker-publish-main.svg?label=Docker&logo=docker&cacheSeconds=600)](https://hub.docker.com/r/justarchi/archisteamfarm)
-[![Github last commit date](https://img.shields.io/github/last-commit/JustArchiNET/ArchiSteamFarm.svg?label=Updated&logo=github&cacheSeconds=600)](https://github.com/JustArchiNET/ArchiSteamFarm/commits)
-[![License](https://img.shields.io/github/license/JustArchiNET/ArchiSteamFarm.svg?label=License&logo=apache&cacheSeconds=2592000)](https://github.com/JustArchiNET/ArchiSteamFarm/blob/main/LICENSE.txt)
 
-[![Steam group](https://img.shields.io/badge/Steam-group-yellowgreen.svg?logo=steam)](https://steamcommunity.com/groups/archiasf)
-[![Discord](https://img.shields.io/discord/267292556709068800.svg?color=7289da&label=Discord&logo=discord&logoColor=white&cacheSeconds=3600)](https://discord.com/invite/uTGDBd2jgr)
 
 [![Crypto donate](https://img.shields.io/badge/Crypto-donate-f7931a.svg?logo=bitcoin)](https://commerce.coinbase.com/checkout/3cf16974-83de-45f5-ad8f-b257e22386c7)
 [![PayPal.me donate](https://img.shields.io/badge/PayPal.me-donate-00457c.svg?logo=paypal)](https://paypal.me/MikeeUwU?country.x=MX&locale.x=es_XC)
